@@ -5,7 +5,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 export default async function ProductDetail({params,}:{params:{slug:string}}) {
-    const { slug } = await params; // Await the `params` object
+    const { slug } = await params; 
 
   const product = data.products.find((x) => x.slug === slug);
     if(!product){
